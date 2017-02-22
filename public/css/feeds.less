@@ -1,0 +1,34 @@
+.feed-composer {
+	border: 1px solid @input-border;
+
+	.form-control,
+	.form-control:hover,
+	.form-control:focus {
+		border-radius: 0;
+		border: 0;
+		border-bottom: 1px solid @grey-200;
+		outline: 0 !important;
+		.box-shadow(none);
+		resize: none;
+	}
+}
+.feed {
+	+ .feed {
+		border-top: 1px solid @grey-200;
+		padding-top: 10px;
+		margin-top: 10px;
+	}
+
+	&:hover {
+		.feed-time {
+			color: @pink-600;
+		}
+	}
+}
+.feed-time {
+	width: 40px;
+	color: @grey-500;
+}
+.feed-note {
+	border-left: 3px solid @green-100;
+}

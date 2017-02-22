@@ -1,0 +1,299 @@
+// @font-face {
+//     font-family: 'Avenir';
+//     src: url('../fonts/AvenirLT-Book.eot');
+//     src: url('../fonts/AvenirLT-Book.eot') format('embedded-opentype'),
+//          url('../fonts/AvenirLT-Book.woff') format('woff'),
+//          url('../fonts/AvenirLT-Book.ttf') format('truetype'),
+//          url('../fonts/AvenirLT-Book.svg#AvenirLT-Book') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'Avenir';
+//     src: url('../fonts/AvenirLT-Medium.eot');
+//     src: url('../fonts/AvenirLT-Medium.eot') format('embedded-opentype'),
+//          url('../fonts/AvenirLT-Medium.woff') format('woff'),
+//          url('../fonts/AvenirLT-Medium.ttf') format('truetype'),
+//          url('../fonts/AvenirLT-Medium.svg#AvenirLT-Medium') format('svg');
+//     font-weight: 500;
+//     font-style: normal;
+// }
+
+
+// @font-face {
+//     font-family: 'Avenir';
+//     src: url('../fonts/AvenirLT-Black.eot');
+//     src: url('../fonts/AvenirLT-Black.eot') format('embedded-opentype'),
+//          url('../fonts/AvenirLT-Black.woff') format('woff'),
+//          url('../fonts/AvenirLT-Black.ttf') format('truetype'),
+//          url('../fonts/AvenirLT-Black.svg#AvenirLT-Black') format('svg');
+//     font-weight: bold;
+//     font-style: normal;
+// }
+
+@import "colors.less";
+// @import "fonts.less";
+@import "bootstrap.less";
+@import "dropdown.less"; 
+
+@import "skeleton.less";
+@import "spacing.less";
+@import "display.less";
+
+
+@import "checkbox-radio.less";
+@import "fileinput.less";
+@import "datatables.less"; 
+@import "scrollbar.less";
+@import "chosen.less";
+@import "picker.less";
+@import "picker.date.less";
+
+@import "form.less";
+@import "button.less";
+@import "modal.less"; 
+@import "sidebar.less";
+@import "feeds.less";
+@import "table.less";
+@import "pace.less";
+
+@import "access.less";
+
+
+
+body {
+	font-weight: 400;
+}
+
+
+hr {
+	margin: @grid-gutter-width/2 0;
+}
+
+.hr-muted {
+	border-color: @grey-200;
+}
+
+label {
+	font-weight: 400;
+}
+
+
+
+th {
+	font-weight: 500 !important;
+	font-size: 12px !important;
+}
+
+th, td {
+	&.tight {
+		width: 1px !important;
+		white-space: nowrap;
+	}
+}
+
+
+.panel {
+	border: 1px solid @grey-300;
+	background: #fff;
+	border-radius: @border-radius-base;
+}
+
+.panel-table {
+	@media(max-width: @screen-sm) {
+		margin-left: -@grid-gutter-width/2;
+		margin-right: -@grid-gutter-width/2;
+		border-radius: 0;
+		border-width: 1px 0;
+	}
+
+	.table {
+		> thead,
+		> tfoot {
+			> tr > th {
+				padding-top: 12px;
+				padding-bottom: 12px;
+				// background: @grey-100;
+				color: @grey-500;
+				font-weight: 400 !important;
+
+				&:last-child {
+					text-align: right;
+				}
+			}
+		}
+
+		> thead {
+			> tr > th {
+				&:first-child {
+					border-radius: 2px 0 0 0;
+				}
+
+				&:last-child {
+					border-radius: 0 2px 0 0;
+				}
+			}
+		}
+
+		> tfoot {
+			> tr > th {
+				&:first-child {
+					border-radius: 0 0 0 2px;
+				}
+
+				&:last-child {
+					border-radius: 0 0 2px 0;
+				}
+			}
+		}
+
+		> thead,
+		> tfoot,
+		> tbody {
+			> tr {
+				> th:first-child,
+				> td:first-child {
+					padding-left: 20px;
+					padding-left: 20px;
+				}
+
+				> th:last-child,
+				> td:last-child {
+					padding-right: 20px;
+					padding-right: 20px;
+				}
+			}
+		}
+
+		> thead > tr > th { border-bottom: 0; }
+	}
+}
+
+.panel-link {
+	color: @text-color;
+	text-decoration: none !important;
+
+	&:hover {
+		background: @blue-50;
+		border-color: @blue-100;
+		color: @blue-700;
+
+		hr {
+			border-color: @blue-100;
+		}
+
+		i {
+			color: @blue-800;
+		}
+
+		.panel-foot {
+			background: darken(@blue-50, 3%)
+		}
+	}
+}
+
+// should rename to breadcrumb :^(
+.progress {
+	.cell-icon {
+		width: 20px; 
+		font-size: 20px; 
+		position: relative; 
+		top: -1px;
+
+		i {
+			line-height: 19px;
+		}
+	}
+
+	.zmdi-chevron-right {
+		font-size: 20px;
+	}
+}
+
+.checkbox-grid {
+	> .checkbox {
+		float: left;
+		margin-right: 0;
+		width: 100% / 8;
+
+		> label {
+			display: block;
+			font-family: 'Roboto Mono', 'Consolas', Monaco;
+			font-size: 13px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

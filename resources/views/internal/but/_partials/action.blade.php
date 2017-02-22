@@ -1,0 +1,1 @@
+<a href="#" class="btn btn-primary actionModal" data-id="{{$r->id}}">{{trans('general.action')}}</a>

@@ -1,0 +1,38 @@
+.table {
+	tr.no-border > td,
+	tr.no-border > th {
+		border: 0;
+	}
+}
+.td-middle {
+	> thead,
+	> tbody,
+	> tfoot {
+		> tr {
+			> td,
+			> th {
+				vertical-align: middle;
+			}
+		}
+	}
+}
+.table-action {
+	> tbody {
+		> tr {
+			> td {
+				padding-top: 17px;
+				padding-bottom: 17px;
+
+				&:last-child {
+					padding-top: 10px;
+					padding-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+.table-mini {
+	th, td {
+		padding: 6px 15px !important;
+	}
+}

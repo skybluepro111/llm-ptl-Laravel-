@@ -1,0 +1,74 @@
+.btn {
+	position: relative;
+	overflow: hidden;
+	font-weight: 500;
+	letter-spacing: .5px;
+	// .box-shadow(0 0 1px rgba(0,0,0,0.2)); 
+}
+
+.btn:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 120px;
+	height: 120px;
+	margin-left: -60px;
+	margin-top: -60px;
+	background: #fff;
+	border-radius: 100%;
+	opacity: .4;
+
+	transform: scale(0);
+}
+
+@keyframes ripple {
+	0% {
+		transform: scale(0);
+	}
+	20% {
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1);
+	}
+}
+
+.btn:not(:active):after {
+	animation: ripple .5s ease-out;
+}
+
+/* fixes initial animation run, without user input, on page load.
+ */
+.btn:after {
+	visibility: hidden;
+}
+
+.btn:focus:after {
+	visibility: visible;
+}
+
+.btn-icon {
+	line-height: @input-height-base;
+
+	i {
+		line-height: inherit;
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		top: -2px;
+	}
+}
+
+@media(max-width: @screen-sm) {
+	.btn-block-responsive {
+		display: block;
+		width: 100%;
+		float: none !important;
+	}
+}
+
+
+

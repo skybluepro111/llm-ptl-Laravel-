@@ -1,0 +1,1 @@
+<a href="#" class="btn btn-primary actionModal" data-id="{{$r->payment->id}}">{{trans('bkpa.action')}}</a>

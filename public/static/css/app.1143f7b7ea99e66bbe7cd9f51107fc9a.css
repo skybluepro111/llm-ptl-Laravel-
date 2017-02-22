@@ -1,0 +1,70 @@
+.gritcode-wizard {
+  overflow: hidden;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  font-size: 0.8rem; }
+  .gritcode-wizard .wizard-step {
+    display: none;
+    width: auto;
+    border: 0;
+    text-align: center;
+    position: relative;
+    cursor: pointer; }
+    .gritcode-wizard .wizard-step.active {
+      display: table-cell; }
+    .gritcode-wizard .wizard-step .wizard-icon {
+      display: table;
+      width: 3em;
+      height: 3em;
+      background-color: #eaeaea;
+      text-align: center;
+      color: #a9a9a9;
+      border: 2px solid #d9d9d9;
+      position: relative;
+      z-index: 1;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      z-index: 22;
+      margin: auto;
+      margin-bottom: 1em; }
+      .gritcode-wizard .wizard-step .wizard-icon .icon-number, .gritcode-wizard .wizard-step .wizard-icon .icon-icon {
+        display: table-cell;
+        vertical-align: middle; }
+      .gritcode-wizard .wizard-step .wizard-icon .icon-number {
+        line-height: 1em; }
+    .gritcode-wizard .wizard-step .title {
+      font-size: 1.1em;
+      color: #464646; }
+    .gritcode-wizard .wizard-step .description, .gritcode-wizard .wizard-step .step-info {
+      font-size: 0.8em;
+      color: #a8a8a8; }
+    .gritcode-wizard .wizard-step .description {
+      margin-bottom: 2em; }
+    .gritcode-wizard .wizard-step .wizard-progress, .gritcode-wizard .wizard-step .wizard-progress-value {
+      position: absolute;
+      bottom: 2em;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #d9d9d9;
+      z-index: 10; }
+    .gritcode-wizard .wizard-step .wizard-progress-value {
+      top: 0;
+      left: 0;
+      width: 0;
+      background: #2ECC71;
+      z-index: 11;
+      padding: 0;
+      transition: 0.45s width ease; }
+    .gritcode-wizard .wizard-step .step-info {
+      text-align: right; }
+    .gritcode-wizard .wizard-step.active .wizard-icon, .gritcode-wizard .wizard-step.previous .wizard-icon {
+      border-color: #2ECC71;
+      color: #2ECC71; }
+    .gritcode-wizard .wizard-step.active .icon, .gritcode-wizard .wizard-step.previous .icon {
+      fill: #2ECC71; }
+    .gritcode-wizard .wizard-step:last-child .wizard-progress-value {
+      width: 100% !important; }
+
+/*# sourceMappingURL=app.1143f7b7ea99e66bbe7cd9f51107fc9a.css.map*/

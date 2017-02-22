@@ -1,0 +1,1 @@
+<a href="{{route('internal.bpo.project.info', compact('project'))}}" class="btn btn-primary">{{$project->slug}}</a>

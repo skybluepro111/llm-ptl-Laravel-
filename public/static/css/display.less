@@ -1,0 +1,140 @@
+// BACKGROUNDS --------------------------------------------------//
+
+.bg-0 {
+	background-color: #ffffff;
+}
+.bg-1 {
+	background-color: #f8f8f8;
+}
+
+// TEXTS --------------------------------------------------//
+
+.text-300 { 
+	font-weight: 300; 
+}
+.text-400 { 
+	font-weight: 400; 
+}
+.text-500 { 
+	font-weight: 500; 
+	// font-weight: 400; 
+}
+.text-600 { 
+	font-weight: 600; 
+}
+.text-700 { 
+	font-weight: 700; 
+}
+.text-sm { 
+	font-size: @font-size-base - 2;
+}
+.text-xs { 
+	font-size: @font-size-base - 4;
+}
+.text-light {
+	color: @grey-300; 
+}
+.text-muted {
+	color: @grey-500; 
+}
+.text-dark {
+	color: @grey-800;
+}
+.text-normal {
+	text-transform: none;
+}
+.text-capital {
+	text-transform: capitalize;
+}
+.text-ellipsis {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.size-12 { font-size: 12px; }
+.size-13 { font-size: 13px; }
+.size-14 { font-size: 14px; }
+.size-15 { font-size: 15px; }
+.size-16 { font-size: 16px; }
+.size-17 { font-size: 17px; }
+.size-18 { font-size: 18px; }
+.size-19 { font-size: 19px; }
+.size-20 { font-size: 20px; }
+
+
+// RESET LIST --------------------------------------------------//
+
+.reset-list,
+.reset-list > li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+// DISPLAY AS TABLE & CELLS --------------------------------------------------//
+
+.row-table {
+	display: table;
+	width: 100%;
+}
+.col-cell {
+	display: table-cell;
+	vertical-align: middle; 
+	position: relative;
+	float: none;
+}
+.cell-tight {
+	width: 1%;
+	white-space: nowrap;
+}
+.cells-top > .col-cell {
+	vertical-align: top;
+}
+
+
+// DISPLAY LIMIT --------------------------------------------------//
+
+.no-overflow {
+	overflow: hidden;
+}
+.no-wrap {
+	white-space: nowrap;
+}
+.no-underline {
+	text-decoration: none !important;
+}
+
+
+// BACKGROUND IMAGE --------------------------------------------------//
+
+.thumb-cover,
+.thumb-contain {
+	background-position: center;
+	background-repeat: no-repeat;
+	display: block;
+	position: relative;
+}
+.thumb-cover {
+	background-size: cover;
+}
+.thumb-contain {
+	background-size: contain;
+}
+
+
+// BORDER-RADIUS --------------------------------------------------//
+
+.no-radius {
+	border-radius: 0;
+}
+.radius-2 {
+	border-radius: 2px;
+}
+.radius-3 {
+	border-radius: 3px;
+}
+.radius-circle {
+	border-radius: 100%;
+}
